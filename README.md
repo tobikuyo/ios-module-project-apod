@@ -1,8 +1,5 @@
 # Astronomy Picture of the Day
 
-
-# Astronomy - ObjC
-
 ## Introduction
 
 For this project, you'll build an app to view the [Astronomy Picture of the Day](https://apod.nasa.gov/apod/astropix.html).
