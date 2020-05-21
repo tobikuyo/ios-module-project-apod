@@ -24,7 +24,7 @@ Sample request JSON: <https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY>
 
 [Leah Kramer](https://www.leahadrianakramer.com) designed the APOD app.
 
-Use her design as a starting point.
+Use her [APOD Figma design](https://www.figma.com/file/KWs0dGDjUXt7Fc8HOz2ooB/Astronomy-of-the-day) as a starting point, there are also individual screens exported in this repository.
 
 1. Collection View with photos of the day (make all cells the same size and color to start)
 2. Detail view with model popup
