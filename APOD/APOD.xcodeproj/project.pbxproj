@@ -16,6 +16,7 @@
 		2C9EF50B247731520070F36A /* OTKMonthlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9EF50A247731520070F36A /* OTKMonthlyViewController.swift */; };
 		2C9EF50E247731D30070F36A /* OTKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9EF50D247731D30070F36A /* OTKDetailViewController.m */; };
 		2C9EF510247733540070F36A /* OTKPictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9EF50F247733540070F36A /* OTKPictureCollectionViewCell.swift */; };
+		2C9EF5172477396A0070F36A /* OTKPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9EF5162477396A0070F36A /* OTKPod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		2C9EF50C247731D30070F36A /* OTKDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTKDetailViewController.h; sourceTree = "<group>"; };
 		2C9EF50D247731D30070F36A /* OTKDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTKDetailViewController.m; sourceTree = "<group>"; };
 		2C9EF50F247733540070F36A /* OTKPictureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTKPictureCollectionViewCell.swift; sourceTree = "<group>"; };
+		2C9EF5152477396A0070F36A /* OTKPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTKPod.h; sourceTree = "<group>"; };
+		2C9EF5162477396A0070F36A /* OTKPod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTKPod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 		2C9EF502247725870070F36A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2C9EF5152477396A0070F36A /* OTKPod.h */,
+				2C9EF5162477396A0070F36A /* OTKPod.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9EF5172477396A0070F36A /* OTKPod.m in Sources */,
 				2C9EF510247733540070F36A /* OTKPictureCollectionViewCell.swift in Sources */,
 				2C9EF4E8247722110070F36A /* AppDelegate.m in Sources */,
 				2C9EF50E247731D30070F36A /* OTKDetailViewController.m in Sources */,
