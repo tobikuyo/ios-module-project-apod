@@ -16,28 +16,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fl-2B-Pvn">
-                                <rect key="frame" x="163" y="715" width="88" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Check it out!"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fl-2B-Pvn">
+                                <rect key="frame" x="91.5" y="684" width="231" height="65"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="IWy-Tx-Z62"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="tintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="CHECK IT OUT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="FgW-bN-F5b" kind="show" id="Q4H-VM-HEr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Astronomy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aX8-DA-1XR">
+                                <rect key="frame" x="47" y="183" width="320" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j1S-GY-csz">
+                                <rect key="frame" x="0.0" y="271" width="414" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="281" id="aNh-A4-1rO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsn-ND-B3G">
+                                <rect key="frame" x="65" y="578" width="284" height="60"/>
+                                <string key="text">Welcome to Astronomy 
+Picture of the Day</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="j1S-GY-csz" firstAttribute="trailing" secondItem="vse-xa-WbL" secondAttribute="trailing" id="8sD-5x-SVL"/>
+                            <constraint firstItem="j1S-GY-csz" firstAttribute="top" secondItem="aX8-DA-1XR" secondAttribute="bottom" constant="40" id="9li-sb-7G1"/>
+                            <constraint firstItem="vse-xa-WbL" firstAttribute="bottom" secondItem="2fl-2B-Pvn" secondAttribute="bottom" constant="113" id="Dep-dm-RX4"/>
+                            <constraint firstItem="dsn-ND-B3G" firstAttribute="leading" secondItem="vse-xa-WbL" secondAttribute="leading" constant="65" id="Emq-KV-zEW"/>
+                            <constraint firstItem="2fl-2B-Pvn" firstAttribute="leading" secondItem="vse-xa-WbL" secondAttribute="leading" constant="91.5" id="M1u-jv-4Uk"/>
+                            <constraint firstItem="j1S-GY-csz" firstAttribute="leading" secondItem="vse-xa-WbL" secondAttribute="leading" id="Y66-dd-Vv0"/>
+                            <constraint firstItem="dsn-ND-B3G" firstAttribute="top" secondItem="j1S-GY-csz" secondAttribute="bottom" constant="26" id="Yl7-0X-K4t"/>
+                            <constraint firstItem="2fl-2B-Pvn" firstAttribute="top" secondItem="dsn-ND-B3G" secondAttribute="bottom" constant="46" id="e5W-Zk-rnd"/>
+                            <constraint firstItem="j1S-GY-csz" firstAttribute="centerX" secondItem="aX8-DA-1XR" secondAttribute="centerX" id="kTg-3X-ZkQ"/>
+                            <constraint firstItem="vse-xa-WbL" firstAttribute="trailing" secondItem="dsn-ND-B3G" secondAttribute="trailing" constant="65" id="mIp-Hb-v8E"/>
+                            <constraint firstItem="vse-xa-WbL" firstAttribute="trailing" secondItem="2fl-2B-Pvn" secondAttribute="trailing" constant="91.5" id="ov2-NO-vKX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vse-xa-WbL"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jw6-R4-wLX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyr-rP-Sg8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2539" y="-198"/>
+            <point key="canvasLocation" x="2537.68115942029" y="-198.21428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Monthly View Controller-->
         <scene sceneID="dG2-wr-0RQ">
             <objects>
-                <viewController id="FgW-bN-F5b" sceneMemberID="viewController">
+                <viewController id="FgW-bN-F5b" customClass="OTKMonthlyViewController" customModule="APOD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lmc-M5-hRU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,12 +96,18 @@
                                 <state key="normal" image="backward" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="FgW-bN-F5b" eventType="touchUpInside" id="Bmm-06-FMo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvE-pZ-mvN">
                                 <rect key="frame" x="292" y="125" width="38" height="36"/>
                                 <state key="normal" image="forward" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="FgW-bN-F5b" eventType="touchUpInside" id="ryk-6n-HHQ"/>
+                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2gs-ao-95e">
                                 <rect key="frame" x="0.0" y="181" width="414" height="681"/>
@@ -73,7 +119,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GQT-fP-6Ve">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PictureCell" id="GQT-fP-6Ve" customClass="OTKPictureCollectionViewCell" customModule="APOD" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="153" height="204"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cO6-Gb-8kc">
@@ -103,7 +149,9 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="153" height="204"/>
                                         <connections>
-                                            <segue destination="vts-mC-cWZ" kind="show" id="J1N-Mv-RF8"/>
+                                            <outlet property="dateLabel" destination="oaC-o5-4fv" id="gBp-4n-KOa"/>
+                                            <outlet property="imageView" destination="bhH-iM-hML" id="eLD-HQ-7de"/>
+                                            <segue destination="vts-mC-cWZ" kind="show" identifier="ShowDetailSegue" id="J1N-Mv-RF8"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -128,15 +176,18 @@
                         <viewLayoutGuide key="safeArea" id="RCV-nt-SLE"/>
                     </view>
                     <navigationItem key="navigationItem" id="KUa-83-Luy"/>
+                    <connections>
+                        <outlet property="collectionView" destination="2gs-ao-95e" id="Hqb-dB-gux"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bcc-71-ULM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3324.6376811594205" y="-198.21428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Q4f-eL-IdY">
             <objects>
-                <viewController id="vts-mC-cWZ" sceneMemberID="viewController">
+                <viewController id="vts-mC-cWZ" customClass="OTKDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rmT-1B-CME">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,10 +200,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <attributes>
                                             <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -183,6 +234,11 @@
                         <viewLayoutGuide key="safeArea" id="jif-zr-bef"/>
                     </view>
                     <navigationItem key="navigationItem" id="53S-8B-VwQ"/>
+                    <connections>
+                        <outlet property="detailTextView" destination="nGc-lH-W3q" id="ucb-8o-v2a"/>
+                        <outlet property="imageView" destination="CVy-XK-zts" id="rqi-uT-YX2"/>
+                        <outlet property="titleLabel" destination="Xfs-7f-FvH" id="Xq8-XG-cGs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIA-Kb-XxB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
