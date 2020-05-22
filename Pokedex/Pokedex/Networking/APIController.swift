@@ -34,8 +34,8 @@ class APIController: NSObject {
             }
 
             do {
-                guard let pokemonJSON = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
-                    let resultsJSON = pokemonJSON["results"] as? [[String: String]] else { throw NSError() }
+                guard let pokemonJSON = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                    let resultsJSON = pokemonJSON["results"] as? [[String: String]] else { return }
 
                 for result in resultsJSON {
                     let pokemon = Pokemon(dictionary: result)
@@ -45,6 +45,47 @@ class APIController: NSObject {
             } catch {
                 NSLog("Error decoding pokemon results: \(error)")
                 completion(nil, error)
+                return
+            }
+        }.resume()
+    }
+
+    @objc func fillInDetails(for pokemon: Pokemon) {
+        let url = pokemon.url
+        let request = URLRequest(url: url)
+
+        URLSession.shared.dataTask(with: request) { data, _, error in
+            if let error = error {
+                NSLog("Error with request for \(pokemon.name): \(error)")
+                return
+            }
+
+            guard let data = data else {
+                NSLog("No data for \(pokemon.name)")
+                return
+            }
+
+            do {
+                guard
+                    let pokemonJSON = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                    let identifier = pokemonJSON["id"] as? Int,
+                    let name = pokemonJSON["name"] as? String,
+                    let spritesJSON = pokemonJSON["sprites"] as? [String: Any],
+                    let sprite = spritesJSON["front_default"] as? String,
+                    let abilitiesArray = pokemonJSON["abilities"] as? [[String: Any]] else { return }
+                pokemon.identifier = NSNumber(integerLiteral: identifier)
+                pokemon.name = name
+                pokemon.sprite = URL(string: sprite)
+                let abilities: NSMutableArray = []
+                for ability in abilitiesArray {
+                    if let abilityJSON = ability["ability"] as? [String: String],
+                        let abilityName = abilityJSON["name"] {
+                        abilities.add(abilityName)
+                        pokemon.abilities = abilities
+                    }
+                }
+            } catch {
+                NSLog("Error getting details for \(pokemon.name): \(error)")
                 return
             }
         }.resume()
