@@ -10,7 +10,7 @@
         <!--Pokedex-->
         <scene sceneID="GGT-ch-rpk">
             <objects>
-                <tableViewController id="17A-al-RZP" sceneMemberID="viewController">
+                <tableViewController id="17A-al-RZP" customClass="OTKPokedexTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hPT-T0-TPM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="58" y="102"/>
         </scene>
-        <!--View Controller-->
+        <!--Pokemon Detail View Controller-->
         <scene sceneID="Jp0-Cg-Qmi">
             <objects>
-                <viewController id="6no-BH-qFO" sceneMemberID="viewController">
+                <viewController id="6no-BH-qFO" customClass="PokemonDetailViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="df4-gv-KhM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +110,13 @@
                         <viewLayoutGuide key="safeArea" id="KdK-Iy-Lhi"/>
                     </view>
                     <navigationItem key="navigationItem" id="5H4-3s-Z5C"/>
+                    <connections>
+                        <outlet property="abilitiesLabel" destination="BMZ-KX-v48" id="9U7-9z-YbM"/>
+                        <outlet property="idLabel" destination="pTT-4p-pyN" id="p7p-93-Tsx"/>
+                        <outlet property="imageView" destination="L1a-hN-iuV" id="ncZ-ob-Qhy"/>
+                        <outlet property="nameLabel" destination="mtM-uz-ZGW" id="ypZ-vY-ezF"/>
+                        <outlet property="typesLabel" destination="yhE-hB-bfN" id="tfi-4r-bR1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ok-5x-yCx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
