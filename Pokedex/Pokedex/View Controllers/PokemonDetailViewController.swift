@@ -15,7 +15,6 @@ class PokemonDetailViewController: UIViewController {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var idLabel: UILabel!
-    @IBOutlet var typesLabel: UILabel!
     @IBOutlet var abilitiesLabel: UILabel!
 
     // MARK: - View Lifecycle

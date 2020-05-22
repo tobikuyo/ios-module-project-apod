@@ -15,6 +15,7 @@
 		2CC9477F247826A700DBBD24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9477E247826A700DBBD24 /* main.m */; };
 		2CC9478D24782B5300DBBD24 /* OTKPokedexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9478C24782B5300DBBD24 /* OTKPokedexTableViewController.m */; };
 		2CC9479324782BBC00DBBD24 /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9479224782BBC00DBBD24 /* PokemonDetailViewController.swift */; };
+		2CC9479824782E1700DBBD24 /* OTKPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9479724782E1700DBBD24 /* OTKPokemon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		2CC9478C24782B5300DBBD24 /* OTKPokedexTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTKPokedexTableViewController.m; sourceTree = "<group>"; };
 		2CC9479124782BBB00DBBD24 /* Pokedex-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pokedex-Bridging-Header.h"; sourceTree = "<group>"; };
 		2CC9479224782BBC00DBBD24 /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
+		2CC9479624782E1700DBBD24 /* OTKPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTKPokemon.h; sourceTree = "<group>"; };
+		2CC9479724782E1700DBBD24 /* OTKPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTKPokemon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 		2CC9478A2478286E00DBBD24 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2CC9479624782E1700DBBD24 /* OTKPokemon.h */,
+				2CC9479724782E1700DBBD24 /* OTKPokemon.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				2CC9477F247826A700DBBD24 /* main.m in Sources */,
 				2CC9479324782BBC00DBBD24 /* PokemonDetailViewController.swift in Sources */,
 				2CC94771247826A500DBBD24 /* SceneDelegate.m in Sources */,
+				2CC9479824782E1700DBBD24 /* OTKPokemon.m in Sources */,
 				2CC9478D24782B5300DBBD24 /* OTKPokedexTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
