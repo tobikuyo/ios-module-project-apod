@@ -11,7 +11,11 @@
 @implementation OTKPod (NSJSONSerialization)
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
-    NSString *date = dictionary[@"date"];
+    NSString *dateString = dictionary[@"date"];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"ddMMyyyy"];
+
+    NSDate *date = [dateFormatter dateFromString:dateString];
     NSString *explanation = dictionary[@"explanation"];
     NSString *urlString = dictionary[@"url"];
     NSURL *imageURL = [NSURL URLWithString:urlString];
@@ -23,5 +27,5 @@
                                                title:title];
     return pictureOD;
 }
-  
+
 @end
