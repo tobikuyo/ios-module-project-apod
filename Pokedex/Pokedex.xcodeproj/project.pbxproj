@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2CC9476E247826A500DBBD24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9476D247826A500DBBD24 /* AppDelegate.m */; };
 		2CC94771247826A500DBBD24 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC94770247826A500DBBD24 /* SceneDelegate.m */; };
-		2CC94774247826A500DBBD24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC94773247826A500DBBD24 /* ViewController.m */; };
 		2CC94777247826A500DBBD24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC94775247826A500DBBD24 /* Main.storyboard */; };
 		2CC94779247826A700DBBD24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC94778247826A700DBBD24 /* Assets.xcassets */; };
 		2CC9477C247826A700DBBD24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9477A247826A700DBBD24 /* LaunchScreen.storyboard */; };
@@ -22,8 +21,6 @@
 		2CC9476D247826A500DBBD24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2CC9476F247826A500DBBD24 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		2CC94770247826A500DBBD24 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		2CC94772247826A500DBBD24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2CC94773247826A500DBBD24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2CC94776247826A500DBBD24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CC94778247826A700DBBD24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC9477B247826A700DBBD24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,19 +58,65 @@
 		2CC9476B247826A500DBBD24 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				2CC947852478281F00DBBD24 /* Application */,
+				2CC947862478283500DBBD24 /* Storyboards */,
+				2CC947892478285C00DBBD24 /* Networking */,
+				2CC9478A2478286E00DBBD24 /* Models */,
+				2CC947882478284D00DBBD24 /* View Controllers */,
+				2CC947872478284300DBBD24 /* Resources */,
+			);
+			path = Pokedex;
+			sourceTree = "<group>";
+		};
+		2CC947852478281F00DBBD24 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				2CC9476C247826A500DBBD24 /* AppDelegate.h */,
 				2CC9476D247826A500DBBD24 /* AppDelegate.m */,
 				2CC9476F247826A500DBBD24 /* SceneDelegate.h */,
 				2CC94770247826A500DBBD24 /* SceneDelegate.m */,
-				2CC94772247826A500DBBD24 /* ViewController.h */,
-				2CC94773247826A500DBBD24 /* ViewController.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2CC947862478283500DBBD24 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				2CC94775247826A500DBBD24 /* Main.storyboard */,
-				2CC94778247826A700DBBD24 /* Assets.xcassets */,
 				2CC9477A247826A700DBBD24 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2CC947872478284300DBBD24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CC94778247826A700DBBD24 /* Assets.xcassets */,
 				2CC9477D247826A700DBBD24 /* Info.plist */,
 				2CC9477E247826A700DBBD24 /* main.m */,
 			);
-			path = Pokedex;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2CC947882478284D00DBBD24 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2CC947892478285C00DBBD24 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2CC9478A2478286E00DBBD24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +189,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC94774247826A500DBBD24 /* ViewController.m in Sources */,
 				2CC9476E247826A500DBBD24 /* AppDelegate.m in Sources */,
 				2CC9477F247826A700DBBD24 /* main.m in Sources */,
 				2CC94771247826A500DBBD24 /* SceneDelegate.m in Sources */,
@@ -291,7 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W485VTCC9R;
-				INFOPLIST_FILE = Pokedex/Info.plist;
+				INFOPLIST_FILE = Pokedex/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W485VTCC9R;
-				INFOPLIST_FILE = Pokedex/Info.plist;
+				INFOPLIST_FILE = Pokedex/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
