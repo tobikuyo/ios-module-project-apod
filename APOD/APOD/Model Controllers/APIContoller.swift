@@ -10,7 +10,7 @@ import Foundation
 
 class APIController {
 
-    let apiKey = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
+    let apiKey = "K9mPOWxqY0SOSRygVBgkgCLnXD253srhYwDgmVRV"
     let baseURL = URL(string: "https://api.nasa.gov/planetary/apod")!
     var photos: [Pod] = []
 
