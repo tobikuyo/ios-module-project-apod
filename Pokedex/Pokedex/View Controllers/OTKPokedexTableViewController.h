@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class APIController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OTKPokedexTableViewController : UITableViewController
+
+@property (nonatomic) APIController *apiController;
 
 @end
 

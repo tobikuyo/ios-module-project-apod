@@ -8,6 +8,7 @@
 
 import Foundation
 
+@objcMembers
 class APIController: NSObject {
 
     @objc(sharedController) static let shared = APIController()
