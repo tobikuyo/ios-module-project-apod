@@ -10,13 +10,13 @@
 
 @implementation OTKPod
 
-- (instancetype)initWithDate:(NSDate *)date
+- (instancetype)initWithDate:(NSString *)date
                  explanation:(NSString *)explanation
                     imageURL:(NSURL *)imageURL
                        title:(NSString *)title {
     self = [super init];
     if (self) {
-        _date = date;
+        _date = [date copy];
         _explanation = [explanation copy];
         _imageURL = imageURL;
         _title = [title copy];
