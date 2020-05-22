@@ -13,7 +13,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     NSString *dateString = dictionary[@"date"];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"ddMMyyyy"];
+    [dateFormatter setDateFormat:@"YYYY-MM-DD"];
 
     NSDate *date = [dateFormatter dateFromString:dateString];
     NSString *explanation = dictionary[@"explanation"];
