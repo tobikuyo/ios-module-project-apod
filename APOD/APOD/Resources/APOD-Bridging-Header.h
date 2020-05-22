@@ -3,3 +3,4 @@
 //
 
 #import "OTKPod.h"
+#import "OTKPod+NSJSONSerialization.h"

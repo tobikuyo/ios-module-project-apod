@@ -16,11 +16,16 @@ class OTKMonthlyViewController: UIViewController {
 
     // MARK: - Properties
 
+    let apiController = APIController()
+    var date = Date()
+
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
 
     // MARK: - IBActions
@@ -36,5 +41,22 @@ class OTKMonthlyViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
+    }
+}
+
+extension OTKMonthlyViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        apiController.photos.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PictureCell", for: indexPath) as? OTKPictureCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+
+        let pictureOD = apiController.photos[indexPath.row]
+        cell.pictureOD = pictureOD
+
+        return cell
     }
 }

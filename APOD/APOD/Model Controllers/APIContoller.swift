@@ -39,16 +39,8 @@ class APIController {
 
             do {
                 guard let dictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else { return }
-
-                if let dateString = dictionary["date"] as? String,
-                    let explanation = dictionary["explanation"] as? String,
-                    let urlString = dictionary["url"] as? String,
-                    let title = dictionary["title"] as? String {
-                    guard let date = dateFormatter.date(from: dateString) else { return }
-                    let imageURL = URL(string: urlString)!
-                    let pictureOD = Pod(date: date, explanation: explanation, imageURL: imageURL, title: title)
-                    self.photos.append(pictureOD)
-                }
+                let pictureOD = Pod(dictionary: dictionary)
+                self.photos.append(pictureOD)
             } catch {
                 NSLog("Error fetching photo from JSON: \(error)")
                 completion(error)

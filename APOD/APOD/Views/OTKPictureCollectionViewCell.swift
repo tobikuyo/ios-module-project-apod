@@ -15,4 +15,8 @@ class OTKPictureCollectionViewCell: UICollectionViewCell {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var dateLabel: UILabel!
 
+    // MARK: - Properties
+
+    var pictureOD: Pod?
+
 }

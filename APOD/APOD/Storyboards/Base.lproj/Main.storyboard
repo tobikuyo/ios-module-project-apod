@@ -83,26 +83,26 @@ Picture of the Day</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6N-Bd-z2y">
-                                <rect key="frame" x="133" y="125" width="151" height="36"/>
+                                <rect key="frame" x="131.5" y="125" width="151" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjj-fa-Jxc">
-                                <rect key="frame" x="87" y="125" width="38" height="36"/>
+                                <rect key="frame" x="87" y="125" width="36.5" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="syW-B6-Rch"/>
                                 </constraints>
-                                <state key="normal" image="backward" catalog="system">
+                                <state key="normal" image="lessthan" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="default"/>
                                 </state>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="FgW-bN-F5b" eventType="touchUpInside" id="Bmm-06-FMo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvE-pZ-mvN">
-                                <rect key="frame" x="292" y="125" width="38" height="36"/>
-                                <state key="normal" image="forward" catalog="system">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvE-pZ-mvN">
+                                <rect key="frame" x="290.5" y="125" width="39.5" height="36"/>
+                                <state key="normal" image="greaterthan" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="default"/>
                                 </state>
                                 <connections>
@@ -171,6 +171,7 @@ Picture of the Day</string>
                             <constraint firstItem="2gs-ao-95e" firstAttribute="top" secondItem="cjj-fa-Jxc" secondAttribute="bottom" constant="20" id="biv-iN-j9d"/>
                             <constraint firstItem="2gs-ao-95e" firstAttribute="bottom" secondItem="RCV-nt-SLE" secondAttribute="bottom" id="gjc-SO-Zxt"/>
                             <constraint firstItem="RCV-nt-SLE" firstAttribute="trailing" secondItem="DvE-pZ-mvN" secondAttribute="trailing" constant="84" id="ueY-WK-MaP"/>
+                            <constraint firstItem="L6N-Bd-z2y" firstAttribute="centerX" secondItem="Lmc-M5-hRU" secondAttribute="centerX" id="uiV-2i-PLG"/>
                             <constraint firstItem="DvE-pZ-mvN" firstAttribute="baseline" secondItem="cjj-fa-Jxc" secondAttribute="firstBaseline" id="zY9-b1-c6E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RCV-nt-SLE"/>
@@ -313,7 +314,7 @@ Picture of the Day</string>
         </scene>
     </scenes>
     <resources>
-        <image name="backward" catalog="system" width="128" height="79"/>
-        <image name="forward" catalog="system" width="128" height="79"/>
+        <image name="greaterthan" catalog="system" width="128" height="111"/>
+        <image name="lessthan" catalog="system" width="128" height="111"/>
     </resources>
 </document>
