@@ -16,6 +16,7 @@
 		2CC9478D24782B5300DBBD24 /* OTKPokedexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9478C24782B5300DBBD24 /* OTKPokedexTableViewController.m */; };
 		2CC9479324782BBC00DBBD24 /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9479224782BBC00DBBD24 /* PokemonDetailViewController.swift */; };
 		2CC9479824782E1700DBBD24 /* OTKPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9479724782E1700DBBD24 /* OTKPokemon.m */; };
+		2CC9479A247833AF00DBBD24 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC94799247833AF00DBBD24 /* APIController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2CC9479224782BBC00DBBD24 /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
 		2CC9479624782E1700DBBD24 /* OTKPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTKPokemon.h; sourceTree = "<group>"; };
 		2CC9479724782E1700DBBD24 /* OTKPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTKPokemon.m; sourceTree = "<group>"; };
+		2CC94799247833AF00DBBD24 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		2CC947892478285C00DBBD24 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				2CC94799247833AF00DBBD24 /* APIController.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC9479A247833AF00DBBD24 /* APIController.swift in Sources */,
 				2CC9476E247826A500DBBD24 /* AppDelegate.m in Sources */,
 				2CC9477F247826A700DBBD24 /* main.m in Sources */,
 				2CC9479324782BBC00DBBD24 /* PokemonDetailViewController.swift in Sources */,
